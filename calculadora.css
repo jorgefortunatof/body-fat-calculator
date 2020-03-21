@@ -1,0 +1,89 @@
+/*Geral*/
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form.calculator{
+    width: 450px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px rgb(212, 212, 212);
+}
+
+/*HEADER*/
+form.calculator header{
+    display: flex;
+    text-align: center;
+    background-color: #38b6ff;
+    color: rgb(241, 241, 241);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+/*MAIN*/
+form div.form-main{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+/*TITLE*/
+form.calculator .title {
+    font-weight: bold;
+    font-size: 18px;
+}
+form.calculator .subtitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*INPUT*/
+form.calculator .input-text{
+    font-size: 12px;
+    color: crimson;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+form.calculator input, form.calculator select{
+    margin-top: 10px;
+    width: 60%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid crimson;
+}
+form.calculator input:hover, form.calculator select{
+    display: block;
+    border: none;
+    border-bottom: 1px solid crimson;
+}
+form.calculator input:focus, form.calculator select{
+    display: block;
+    outline: none;
+}
+form.calculator input:disabled{
+    background-color: white;
+}
+
+/*DIVISION*/
+form.calculator .division{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+form.calculator .division .subtitle{
+    color: #38b6ff;
+}
+
+/*DOT DETAIL*/
+form.calculator .dot{
+    color: #38b6ff;
+}

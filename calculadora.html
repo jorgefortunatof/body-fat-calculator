@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="calculadora.css">
+    </head>
+    <body style="display: flex; flex: 1; justify-content: center; align-items: center;">
+        
+<form class="calculator">
+    <header class="header-form">
+        <div>
+            <h1 class="title">Calcule seu percentual de gordura (BF)</h1>
+            <h2 class="subtitle">Preencha os valores abaixo.</h2>
+        </div>
+    </header>
+
+    <div class="form-main">
+        <label for="height" class="input-text">
+            Sexo<span class="dot">*</span>
+            <select oninput="calculeValues()" id="sex">
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+            </select>
+        </label>
+
+        <label for="height" class="input-text">
+            Altura(cm)<span class="dot">*</span>
+            <input oninput="calculeValues()" min="0" id="height" name="height" type="number">
+        </label>
+        <label for="waist" class="input-text">
+            Cintura(cm)<span class="dot">*</span>
+            <input oninput="calculeValues()" min="0" id="waist" name="waist" type="number">
+        </label>
+        <label for="neck" class="input-text">
+            Pescoço(cm)<span class="dot">*</span>
+            <input oninput="calculeValues()" min="0" min="0" id="neck" name="neck" type="number">
+        </label>
+        <label for="weight" class="input-text">
+            Peso(kg)<span class="dot">*</span>
+            <input oninput="calculeValues()"  min="0" id="weight" name="weight" type="number">
+        </label>
+        
+        <div class="division">
+            <h2 class="subtitle">Resultado:</h2>
+        </div>
+
+        <label class="input-text">
+            Percentual de gordura(kg)
+            <input disabled min="0" id="fat" type="text">
+        </label>
+        <label class="input-text">
+            Massa magra(kg)
+            <input disabled min="0" id="light-mass" type="text">
+        </label>
+        <label class="input-text">
+            Massa gorda(kg)
+            <input disabled min="0" id="heavy-mass" type="text">
+        </label>
+    </div>
+</form>
+
+<script src="calculadora.js"></script>
+    </body>
+</html>
